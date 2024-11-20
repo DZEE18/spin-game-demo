@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LuckyDraw</title>
+   
+    <script src="https://cdn.jsdelivr.net/npm/qrious@4.0.2/dist/qrious.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Charm:wght@400;700&family=Liu+Jian+Mao+Cao&family=Ma+Shan+Zheng&display=swap" rel="stylesheet">
+
+
+    <style>
+        body{
+            margin: 0;
+        }
+        #game-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+        }
+        canvas {
+            max-width: 600px; /* This should match the Phaser config */
+            height: 100%;
+        }
+        #toast {
+            position: fixed;
+            bottom: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            background-color: rgba(0, 0, 0, 0.75);
+            color: #fff;
+            padding: 10px 20px;
+            border-radius: 5px;
+            opacity: 0;
+            transition: opacity 0.5s ease-in-out;
+            z-index: 1000;
+            font-size: 16px;
+            font-family: Arial, sans-serif;
+        }
+
+        #toast.show {
+            opacity: 1;
+        }
+
+
+    </style>
+  <script type="module" crossorigin src="./assets/index-tmDWYdd9.js"></script>
+</head>
+<body>
+    <div id="game-container"></div>
+    <div id="toast"></div>
+    <script src="https://cdn.jsdelivr.net/npm/phaser@3.55.2/dist/phaser.min.js"></script>
+</body>
+</html>

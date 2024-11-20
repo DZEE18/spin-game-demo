@@ -1,0 +1,13 @@
+{
+  "dependencies": {
+    "qrcode": "^1.5.4",
+    "vite": "^5.4.11"
+  },
+  "devDependencies": {
+    "gh-pages": "^6.2.0"
+  },
+  "scripts": {
+    "deploy": "vite build && gh-pages -d dist"
+  }
+  
+}
